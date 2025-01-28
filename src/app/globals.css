@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   font-family: Arial, Helvetica, sans-serif;
-}
-*{
+} */
+
+ 
+html,body{
+  height: 100%;
+  width: 100%;
   background: #000;
   color: white;
 }
+
 
 @layer base {
   :root {
