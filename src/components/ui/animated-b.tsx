@@ -1,6 +1,9 @@
 import React from 'react'
 
-const AButton = ({children, className}) => {
+const AButton = ({children, className}:{
+    children: React.ReactNode,
+    className: string
+}) => {
   return (
     <>
         <button className={`p-[3px] relative ${className}`}>

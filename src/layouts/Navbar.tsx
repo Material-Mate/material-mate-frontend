@@ -41,7 +41,7 @@ const Navbar = () => {
         ))
       }
       </div>
-      <Button className="rounded-2xl bg-purple-600 h-10 w-20 font-semibold text-md hover:bg-purple-500">Login</Button>
+      <Button className="rounded-2xl bg-gradient-to-r from-indigo-500 to-purple-500 h-10 w-20 font-semibold text-md hover:bg-purple-500">Login</Button>
     </div>
   );
 };
