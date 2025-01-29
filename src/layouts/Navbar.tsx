@@ -36,7 +36,7 @@ const routes = [
 const Navbar = () => {
 
   return (
-    <div className=" h-20 bg-slate-950 flex py-1 px-20 items-center drop-shadow-[0_4px_10px_rgba(180,0,255,0.3)] shadow-xl justify-between">
+    <div className=" h-20  bg-zinc-950 relative flex py-1 px-20 items-center shadow-[0_0_30px_5px_rgba(50,50,50,0.8)] justify-between">
      <Link href={"/"}> <Image src="/logo.gif" alt="logo" width={250} height={250} /></Link>
       <div className="text-white flex justify-center items-center gap-5">
       {
