@@ -1,4 +1,5 @@
 "use client";
+import { fadeInCardAnimation } from '@/animations/FadeIn';
 import SubjectCard from '@/components/shared/cards/SubjectCard';
 import PreviousYearPaperDialogBox from '@/components/shared/dialogBoxes/PreviousYearPaperDialogBox';
 import {UnitsDialogBox} from '@/components/shared/dialogBoxes/UnitsDialogBox';
@@ -41,10 +42,12 @@ const Space = () => {
        <div className="flex mt-8 items-center  flex-wrap gap-6">
               {subjects.map((subject,index) => (
                 <SubjectCard 
+                index={index}
+                animation={fadeInCardAnimation}
                 key={index} 
                 subject={subject.name} 
                 course = {subject.course+" "+subject.semester.toString()}
-                setDialogBoxOpen={setDialogBoxOpen}
+                onclick={setDialogBoxOpen}
                 />
               ))} 
             <UnitsDialogBox 
@@ -59,7 +62,9 @@ const Space = () => {
                 key={index} 
                 subject={subject.name} 
                 course = {subject.course+" "+subject.semester.toString()}
-                setDialogBoxOpen={setPreviousYearDialogBoxOpen}
+                onclick={setPreviousYearDialogBoxOpen}
+                index={index}
+                animation={fadeInCardAnimation}
                 />
               ))} 
             <PreviousYearPaperDialogBox 

@@ -5,6 +5,9 @@ export const mcaNotes = [
     { course: 'MCA', semester: 'Semester 4', notesLink: 'https://example.com/mca-sem4-notes.pdf' },
     { course: 'MCA', semester: 'Semester 5', notesLink: 'https://example.com/mca-sem5-notes.pdf' },
     { course: 'MCA', semester: 'Semester 6', notesLink: 'https://example.com/mca-sem6-notes.pdf' },
+    { course: 'MCA', semester: 'Semester 7', notesLink: 'https://example.com/mca-sem6-notes.pdf' },
+    { course: 'MCA', semester: 'Semester 8', notesLink: 'https://example.com/mca-sem6-notes.pdf' },
+    { course: 'MCA', semester: 'Semester 9', notesLink: 'https://example.com/mca-sem6-notes.pdf' },
   ];
   
 export const mbaNotes = [
@@ -14,6 +17,10 @@ export const mbaNotes = [
     { course: 'MBA', semester: 'Semester 4', notesLink: 'https://example.com/mba-sem4-notes.pdf' },
     { course: 'MBA', semester: 'Semester 5', notesLink: 'https://example.com/mba-sem5-notes.pdf' },
     { course: 'MBA', semester: 'Semester 6', notesLink: 'https://example.com/mba-sem6-notes.pdf' },
+    { course: 'MBA', semester: 'Semester 7', notesLink: 'https://example.com/mba-sem6-notes.pdf' },
+    { course: 'MBA', semester: 'Semester 8', notesLink: 'https://example.com/mba-sem6-notes.pdf' },
+    { course: 'MBA', semester: 'Semester 9', notesLink: 'https://example.com/mba-sem6-notes.pdf' },
+    { course: 'MBA', semester: 'Semester 9', notesLink: 'https://example.com/mba-sem6-notes.pdf' },
   ];
   const semesters = [
     { value: 1, label: "1st Semester" },
@@ -26,6 +33,7 @@ export const mbaNotes = [
     { value: 8, label: "8th Semester" },
     { value: 9, label: "9th Semester" },
   ];
+
   
   export default semesters;
   
