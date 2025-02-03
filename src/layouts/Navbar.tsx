@@ -46,7 +46,7 @@ const Navbar = () => {
         ))
       }
       </div>
-     <AnimatedBtn className="w-20 h-auto">Login</AnimatedBtn>
+      <Link href={"/register"} ><AnimatedBtn className="w-20 h-auto">Login</AnimatedBtn></Link>
     </div>
   );
 };
