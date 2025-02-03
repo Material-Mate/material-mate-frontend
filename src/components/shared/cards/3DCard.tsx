@@ -11,7 +11,7 @@ import { CarouselOrientation } from "../carousels/Carousel";
 export function ThreeDCardDemo() {
   return (
 <CardContainer 
-className="inter-var relative rounded-2xl w-full h-screen bg-green-500/10 shadow-[0_0_15px_5px_rgba(34,197,94,0.5)]  hover:shadow-[0_0_20px_10px_rgba(34,197,94,0.5)]"
+className="inter-var relative rounded-2xl w-full h-screen hover:bg-green-500/10 shadow-[0_0_15px_5px_rgba(34,197,94,0.5)]  hover:shadow-[0_0_20px_10px_rgba(34,197,94,0.5)]"
 >
 
  <div className="h-20 z-10 text-green-500 font-semibold text-xl w-20 absolute -top-10 -left-10 flex justify-center items-center rounded-full  border-green-400 border bg-green-500/25">
