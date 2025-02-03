@@ -9,8 +9,11 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { BookHeadphones, NotepadText, Zap } from "lucide-react"
+import clsx from "clsx"
 
-export function CarouselOrientation() {
+export function CarouselOrientation({isSecondCard}:{
+  isSecondCard:boolean
+}) {
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   )
@@ -59,7 +62,10 @@ export function CarouselOrientation() {
         {data.map((obj, index) => (
           <CarouselItem key={index} className="pt-1 md:basis-1/2">
             <div className="p-1">
-               <div className="h-16 w-16 text-green-500 border-zinc-500 rounded-full border-2 flex justify-center items-center">
+               <div className={clsx("h-16 w-16  border-zinc-500 rounded-full border-2 flex justify-center items-center",{
+                "text-red-500":isSecondCard,
+                "text-green-500":!isSecondCard,
+               })}>
                   {obj.icon}
                </div>
                <div className="text-xl font-semibold my-2">{obj.title}</div>

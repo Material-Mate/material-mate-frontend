@@ -113,7 +113,8 @@ export default function Home() {
 
       {/* body */}
       <div className="px-28 py-20">
-      <ThreeDCardDemo/>
+      <ThreeDCardDemo isSecondCard={false} title="Your Ultimate Learning Companion!" discription="Whether you're a beginner or an expert, MaterialMate provides the best resources to help you:"/>
+      <ThreeDCardDemo isSecondCard={true} title="Your Ultimate Learning Companion!" discription="Whether you're a beginner or an expert, MaterialMate provides the best resources to help you:"/>
       </div>
       <div className="px-20 relative overflow-hidden">
         <WavyBackground className="max-w-5xl mx-auto">
