@@ -13,6 +13,8 @@ import { IconBrandGithub, IconBrandGoogle, IconBrandOnlyfans } from "@tabler/ico
 import { FormEvent } from "react";
 import AnimatedBtn from "@/components/ui/animatedBtn";
 import { ThreeDCardDemo } from "@/components/shared/cards/3DCard";
+import HappyStudent from "@/components/shared/HappyStudent";
+import {  MiniSignUpCmp} from "@/components/shared/MiniSignUpCmp";
 
 export default function Home() {
   const resources = [
@@ -116,6 +118,7 @@ export default function Home() {
       <ThreeDCardDemo isSecondCard={false} title="Your Ultimate Learning Companion!" discription="Whether you're a beginner or an expert, MaterialMate provides the best resources to help you:"/>
       <ThreeDCardDemo isSecondCard={true} title="Your Ultimate Learning Companion!" discription="Whether you're a beginner or an expert, MaterialMate provides the best resources to help you:"/>
       </div>
+      <HappyStudent/>
       <div className="px-20 relative overflow-hidden">
         <WavyBackground className="max-w-5xl mx-auto">
           <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center">
@@ -136,6 +139,7 @@ export default function Home() {
           </div>
         </WavyBackground>
       </div>
+      <MiniSignUpCmp/>
        
     </>
   );
