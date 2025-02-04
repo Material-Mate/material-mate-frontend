@@ -26,7 +26,7 @@ export function MiniSignUpCmp() {
     },
   ];
   return (
-    <div className="flex flex-col items-center pb-6 justify-center h-[20rem]  ">
+    <div className="flex flex-col items-center pb-6 justify-center h-[25rem]  ">
       <p className="text-neutral-200 text-sm sm:text-base  ">
         The road to freedom starts from here
       </p>
