@@ -3,6 +3,7 @@ import { fadeInCardAnimation } from '@/animations/FadeIn';
 import SubjectCard from '@/components/shared/cards/SubjectCard';
 import PreviousYearPaperDialogBox from '@/components/shared/dialogBoxes/PreviousYearPaperDialogBox';
 import {UnitsDialogBox} from '@/components/shared/dialogBoxes/UnitsDialogBox';
+import { MiniSignUpCmp } from '@/components/shared/MiniSignUpCmp';
 import React from 'react'
 import { SiBookstack } from "react-icons/si";
 const Space = () => {
@@ -72,6 +73,7 @@ const Space = () => {
             setPreviousYearDialogBoxOpen={setPreviousYearDialogBoxOpen}
             />
        </div>
+       <MiniSignUpCmp/>
     </div>
   )
 }

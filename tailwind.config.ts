@@ -15,8 +15,17 @@ export default {
     extend: {
       animation: {
         border: 'border 4s ease infinite',
+        shimmer: "shimmer 2s linear infinite",
       },
       keyframes: {
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
         border: {
           '0%, 100%': { backgroundPosition: '0% 50%' },
           '50%': { backgroundPosition: '100% 50%' },

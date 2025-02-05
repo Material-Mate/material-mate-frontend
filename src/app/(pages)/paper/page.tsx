@@ -15,6 +15,7 @@ import {
 import SubjectCard from "@/components/shared/cards/SubjectCard";
 import { SubjectDrawer } from "@/components/shared/Drawer";
 import { fadeInCardAnimation } from "@/animations/FadeIn";
+import { MiniSignUpCmp } from "@/components/shared/MiniSignUpCmp";
 
 
 interface NotesProps {
@@ -77,7 +78,7 @@ const Notes: React.FC<NotesProps> = () => {
           ))}
         </div>
       </div>
-      {/* <GradientCard/> */}
+      <MiniSignUpCmp/>
     </div>
   );
 };
