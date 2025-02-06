@@ -8,7 +8,6 @@ const SubjectCard = ({subject,course,onclick,animation,index}:{
     animation:Variants,
     index:number
 }) => {
-  motion
   return (
     <motion.div 
     id='shadow_for_card' 
