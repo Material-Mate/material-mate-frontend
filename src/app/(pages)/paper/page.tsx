@@ -1,6 +1,6 @@
 "use client";
 import Tab from "@/components/ui/Tab";
-import semesters, { mbaNotes, mcaNotes } from "@/data/dummy";
+import  { mbaNotes, mcaNotes,semesters } from "@/data/dummy";
 import { Note } from "@/types/types";
 import React, { useState } from "react";
 import {

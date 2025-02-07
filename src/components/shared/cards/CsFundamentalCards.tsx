@@ -2,15 +2,14 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
 import { motion, Variants } from "framer-motion";
-const CsFundamentalCards = ({onclick,animation,index}: {
-  onclick: React.Dispatch<React.SetStateAction<boolean>>;
+const CsFundamentalCards = ({onClick,animation,index}: {
+  onClick: React.Dispatch<React.SetStateAction<boolean>>;
   animation: Variants;
   index: number;
 }) => {
   return (
     <motion.div 
     className="shadow-xl bg-zinc-900 rounded-xl p-5 w-[350px] overflow-hidden"
-    onClick={()=>onclick(true)}
     variants={animation}
     initial="initial"
     whileInView="animate"
@@ -34,6 +33,7 @@ const CsFundamentalCards = ({onclick,animation,index}: {
         </p>
         <Button
           variant={"secondary"}
+          onClick={()=>onClick(true)}
           className=" w-full text-white mt-2 bg-gradient-to-r text-md from-purple-400 to-purple-600"
         >
           View Details

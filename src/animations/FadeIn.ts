@@ -8,7 +8,7 @@ export const fadeInCardAnimation = {
       scale:1,
       transition: {
         type: 'spring',  
-        delay: 0.05*index, 
+        delay: 0.08*index, 
       }
     })
   }

@@ -28,6 +28,7 @@
     "mini-svg-data-uri": "^1.4.4",
     "motion": "^12.0.6",
     "next": "15.1.6",
+    "nextjs-toploader": "^3.7.15",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-element-to-jsx-string": "^17.0.0",

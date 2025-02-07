@@ -22,7 +22,7 @@ export const mbaNotes = [
     { course: 'MBA', semester: 'Semester 9', notesLink: 'https://example.com/mba-sem6-notes.pdf' },
     { course: 'MBA', semester: 'Semester 9', notesLink: 'https://example.com/mba-sem6-notes.pdf' },
   ];
-  const semesters = [
+export const semesters = [
     { value: 1, label: "1st Semester" },
     { value: 2, label: "2nd Semester" },
     { value: 3, label: "3rd Semester" },
@@ -33,7 +33,15 @@ export const mbaNotes = [
     { value: 8, label: "8th Semester" },
     { value: 9, label: "9th Semester" },
   ];
-
-  
-  export default semesters;
-  
+export const cs_fundamental = [
+  {
+    name:"Operating System",
+    thumbnail:"",
+    discription:"",
+    total_video_count:0,
+    videos_link :[
+      ""
+    ],
+    notes_link:""
+  }
+]
