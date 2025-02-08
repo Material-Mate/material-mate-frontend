@@ -1,20 +1,12 @@
 "use client"
-import AButton from "@/components/ui/animated-b";
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "../../components/ui/Hero";
-import { Compare } from "@/components/ui/compare";
-import { Button } from "@/components/ui/button";
 import { WavyBackground } from "@/components/ui/wavy-background";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import BottomGradient from "@/components/ui/bottom-gradient";
-import LabelInputContainer from "@/components/ui/input-label-container";
-import { IconBrandGithub, IconBrandGoogle, IconBrandOnlyfans } from "@tabler/icons-react";
 import { FormEvent } from "react";
 import AnimatedBtn from "@/components/ui/animatedBtn";
 import { ThreeDCardDemo } from "@/components/shared/cards/3DCard";
 import HappyStudent from "@/components/shared/HappyStudent";
-import {  MiniSignUpCmp} from "@/components/shared/MiniSignUpCmp";
+
 
 export default function Home() {
   const resources = [
@@ -139,7 +131,7 @@ export default function Home() {
           </div>
         </WavyBackground>
       </div>
-      <MiniSignUpCmp/>
+
        
     </>
   );

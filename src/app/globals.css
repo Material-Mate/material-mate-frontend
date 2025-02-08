@@ -14,6 +14,30 @@ html,body{
 -moz-box-shadow: 10px 10px 95px -31px #4F46E5 ;
 box-shadow: 10px 10px 95px -31px #4F46E5 ;
 }
+/* Webkit Browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.8); /* Purple-500 with transparency */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(147, 51, 234, 1); /* Slightly darker purple */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(168, 85, 247, 0.8) transparent;
+}
 
 @layer base {
   :root {
