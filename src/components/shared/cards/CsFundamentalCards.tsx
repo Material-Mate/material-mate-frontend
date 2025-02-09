@@ -10,7 +10,7 @@ const CsFundamentalCards = ({onClick,animation,index,subject}: {
 }) => {
   return (
     <motion.div 
-    className="shadow-xl bg-zinc-900 rounded-xl p-5 w-[350px] overflow-hidden"
+    className="shadow-xl bg-zinc-900 rounded-xl p-5 w-[310px] overflow-hidden"
     variants={animation}
     initial="initial"
     whileInView="animate"

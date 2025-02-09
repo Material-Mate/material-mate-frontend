@@ -6,15 +6,15 @@ import { TypewriterEffectSmooth } from "./typewriter-effect";
 export function MiniSignUpCmp() {
   const words = [
     {
-      text: "Build",
+      text: "Start",
        className:"text-white "
     },
     {
-      text: "awesome",
+      text: "learning",
        className:"text-white "
     },
     {
-      text: "apps",
+      text: "now",
        className:"text-white "
     },
     {
@@ -22,14 +22,14 @@ export function MiniSignUpCmp() {
       className:"text-white "
     },
     {
-      text: "Aceternity.",
+      text: "MaterialMate",
       className: "text-blue-500 text-purple-500 ",
     },
   ];
   return (
     <div className="flex flex-col items-center pb-6 justify-center h-[25rem]  ">
       <p className="text-neutral-200 text-sm sm:text-base  ">
-        The road to freedom starts from here
+        The road to success starts from here
       </p>
       <TypewriterEffectSmooth words={words} cursorClassName="lg:h-10"/>
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
