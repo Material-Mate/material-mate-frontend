@@ -22,17 +22,17 @@ const CsFundatmentalDialogBox = ({
 }) => {
   return (
     <Dialog open={isOpen} onOpenChange={onChange}>
-      <DialogContent className="sm:max-w-[90%] h-[65%]  bg-zinc-950 flex">
+      <DialogContent className="max-w-[90%] sm:max-w-[60%] md:max-w-[50%] lg:max-w-[30%] h-auto  bg-zinc-950 flex flex-col">
         <Image
           src={
             activeSubject.thumbnail
           }
-          height={550}
-          width={550}
+          height={400}
+          width={400}
           alt=""
           className="rounded-xl"
         />
-      <div className="w-1/2 h-full">
+      <div className="w-full h-full">
       <DialogHeader className="h-[10%]">
           <DialogTitle className="text-2xl">
             <span className="bg-gradient-to-r from-purple-300 to-purple-400 bg-clip-text text-transparent">
@@ -40,7 +40,7 @@ const CsFundatmentalDialogBox = ({
             </span>
           </DialogTitle>
         </DialogHeader>
-        <div className="flex flex-col gap-4 w-full h-[78%] overflow-y-auto px-2 py-6">
+        <div className="flex flex-col gap-4 w-full max-h-[15rem]  min-h-[10rem] overflow-y-auto px-2 py-2">
           {activeSubject.videos_links.map((lecture, index) => (
             <div
               key={index}
@@ -48,14 +48,14 @@ const CsFundatmentalDialogBox = ({
             >
               <p>Lecture {index+1}: {lecture.lecture_name}</p>
              
-             <Link href={lecture.video_link} className="p-2 cursor-pointer hover:scale-95 hover:bg-purple-500 border rounded-full"
+             <Link href={lecture.video_link} className="p-2 font- cursor-pointer hover:scale-95 hover:bg-purple-500 border rounded-full"
              >
-             <Play size={15}/>
+             <Play size={15} className="font-semibold"/>
              </Link>
             </div>
           ))}
         </div>
-        <DialogFooter className="w-full flex h-[12%]">
+        <DialogFooter className="w-full flex">
           <Button
             onClick={() => onChange(false)}
             className="bg-gradient-to-r mt-2 w-1/2"

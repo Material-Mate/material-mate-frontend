@@ -7,9 +7,14 @@ body {
 }
 
 #shadow_for_card{
-  -webkit-box-shadow: 10px 10px 95px -31px #4F46E5 ;
--moz-box-shadow: 10px 10px 95px -31px #4F46E5 ;
+  -webkit-box-shadow: 10px 10px 10px -31px #4F46E5 ;
+-moz-box-shadow: 10px 10px 10px -31px #4F46E5 ;
 box-shadow: 10px 10px 95px -31px #4F46E5 ;
+}
+#shadow_for_card_2{
+  -webkit-box-shadow: 10px 10px 10px -41px #4F46E5 ;
+-moz-box-shadow: 10px 10px 10px -41px #4F46E5 ;
+box-shadow: 10px 10px 50px -41px #4F46E5 ;
 }
 /* Webkit Browsers (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {

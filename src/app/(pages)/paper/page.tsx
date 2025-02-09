@@ -37,7 +37,7 @@ const Notes: React.FC<NotesProps> = () => {
   return (
     <div className="py-5 px-28">
       {/* Tabs */}
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mt-5">
         <Tab
           selectedTab={selectedTab}
           handleTabClick={handleTabClick}

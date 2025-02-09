@@ -10,6 +10,7 @@ const CsFundamentalCards = ({onClick,animation,index,subject}: {
 }) => {
   return (
     <motion.div 
+    id='shadow_for_card_2' 
     className="shadow-xl bg-zinc-900 rounded-xl p-5 w-[310px] overflow-hidden"
     variants={animation}
     initial="initial"
