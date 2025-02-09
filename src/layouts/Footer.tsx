@@ -5,11 +5,11 @@ import Link from "next/link";
 const Footer: React.FC = () => {
     return (
         <footer className="w-full">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl px-6 sm:px-6 lg:px-14">
                
                 <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-8 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8">
                     <div className="col-span-full mb-10 lg:col-span-2 lg:mb-0">
-                    <Link href={"/"}> <Image src="/logo.gif" alt="logo" width={250} height={250} /></Link>
+                    <Link href={"/"}> <Image src="/logo.gif" alt="logo" width={200} height={50}/></Link>
                         
                     </div>
                     

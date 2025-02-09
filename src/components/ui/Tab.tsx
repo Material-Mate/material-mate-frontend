@@ -16,7 +16,7 @@ const Tab = ({
         className={`py-2 rounded-l-lg  px-6 text-lg font-semibold  ${
           selectedTab === tab1
             ? "bg-gradient-to-r from-indigo-400 to-purple-500  text-white"
-            : "bg-gray-800 text-gray-400"
+            : "bg-zinc-800 text-gray-400"
         } transition-colors duration-300`}
       >
         {tab1}
@@ -26,7 +26,7 @@ const Tab = ({
         className={`py-2 rounded-r-lg px-6 text-lg font-semibold d ${
           selectedTab === tab2
             ? "bg-gradient-to-r from-indigo-400 to-purple-500  text-white"
-            : "bg-gray-800 text-gray-400"
+            : "bg-zinc-800 text-gray-400"
         } transition-colors duration-300`}
       >
         {tab2}

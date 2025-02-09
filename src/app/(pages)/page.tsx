@@ -1,11 +1,12 @@
 "use client"
 import { motion } from "framer-motion";
-import { HeroHighlight, Highlight } from "../../components/ui/Hero";
 import { WavyBackground } from "@/components/ui/wavy-background";
 import { FormEvent } from "react";
 import AnimatedBtn from "@/components/ui/animatedBtn";
 import { ThreeDCardDemo } from "@/components/shared/cards/3DCard";
 import HappyStudent from "@/components/shared/HappyStudent";
+import { BackgroundLines } from "@/components/ui/background-lines";
+import { Highlight } from "@/components/ui/Hero";
 
 
 export default function Home() {
@@ -49,7 +50,7 @@ export default function Home() {
 
   return (
     <>
-      <HeroHighlight>
+      <BackgroundLines className="bg-zinc-950">
         <motion.h1
           initial={{
             opacity: 0,
@@ -73,7 +74,7 @@ export default function Home() {
             </div>
             <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mt-4 leading-[3rem]">
               Padhlo चाहे Kahi se{" "}
-              <Highlight className="text-black dark:text-white">
+              <Highlight className="">
           Placement
           </Highlight>
               Hoga Yhi Se.
@@ -103,7 +104,7 @@ export default function Home() {
             })}
           </div>
         </div>
-      </HeroHighlight>
+      </BackgroundLines>
 
       {/* body */}
       <div className="px-28 py-20">
@@ -131,8 +132,6 @@ export default function Home() {
           </div>
         </WavyBackground>
       </div>
-
-       
     </>
   );
 }

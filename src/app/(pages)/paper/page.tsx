@@ -1,7 +1,6 @@
 "use client";
 import Tab from "@/components/ui/Tab";
 import  { mbaNotes, mcaNotes,semesters } from "@/data/dummy";
-import { Note } from "@/types/types";
 import React, { useState } from "react";
 import {
   Select,
@@ -50,7 +49,7 @@ const Notes: React.FC<NotesProps> = () => {
           <SelectTrigger className="w-[180px]">
             <SelectValue placeholder="Select Semester" className="text-xl" />
           </SelectTrigger>
-          <SelectContent className="bg-black text-white">
+          <SelectContent>
             <SelectGroup>
               <SelectLabel>Semesters</SelectLabel>
               {semesters.map((semester) => (
@@ -68,7 +67,7 @@ const Notes: React.FC<NotesProps> = () => {
       </div>
 
       {/* Notes */}
-      <div className="bg-black text-white p-6 rounded-lg shadow-md">
+      <div className="py-6 rounded-lg shadow-md">
         <h2 className="text-2xl font-semibold mb-4">
           {selectedTab} Previous Year Papers - All Semesters
         </h2>
@@ -78,7 +77,6 @@ const Notes: React.FC<NotesProps> = () => {
           ))}
         </div>
       </div>
-      <MiniSignUpCmp/>
     </div>
   );
 };

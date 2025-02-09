@@ -42,7 +42,7 @@ export default function RootLayout({
       <ReactLenis root>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased ${roboto.className}`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased ${roboto.className} bg-zinc-950 text-white`}
         >
         {children}
       </body>
