@@ -41,14 +41,14 @@ const CsFundatmentalDialogBox = ({
           </DialogTitle>
         </DialogHeader>
         <div className="flex flex-col gap-4 w-full h-[78%] overflow-y-auto px-2 py-6">
-          {activeSubject.videos_links.map((link, index) => (
+          {activeSubject.videos_links.map((lecture, index) => (
             <div
               key={index}
               className="w-full py-3 rounded-lg border border-slate-400 flex justify-between items-center px-5"
             >
-              <p>Lecture {index+1}: {activeSubject.name}</p>
+              <p>Lecture {index+1}: {lecture.lecture_name}</p>
              
-             <Link href={link} className="p-2 cursor-pointer hover:scale-95 hover:bg-purple-500 border rounded-full"
+             <Link href={lecture.video_link} className="p-2 cursor-pointer hover:scale-95 hover:bg-purple-500 border rounded-full"
              >
              <Play size={15}/>
              </Link>

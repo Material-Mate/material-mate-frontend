@@ -2,7 +2,7 @@ import React from 'react'
 
 const Development = () => {
   return (
-    <div>Development</div>
+    <div>Complete Development Roadmap and Resourses</div>
   )
 }
 
