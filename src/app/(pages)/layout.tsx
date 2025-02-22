@@ -10,7 +10,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
       <NextTopLoader color="purple"/>
       <Navbar />
       {children}
-      <MiniSignUpCmp />
+      {/* <MiniSignUpCmp /> */}
       <Footer />
     </>
   );

@@ -50,7 +50,7 @@ export default function Home() {
 
   return (
     <>
-      <BackgroundLines className="bg-zinc-950">
+      <BackgroundLines className="bg-zinc-950 h-screen">
         <motion.h1
           initial={{
             opacity: 0,
@@ -67,12 +67,12 @@ export default function Home() {
           className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-200 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
         >
           <div className="flex flex-col items-center justify-center text-center">
-            <div className="mx-auto mb-6 mt-16 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border px-7 py-2 shadow-md backdrop-blur transition-all">
+            <div className="mx-auto mb-2 sm:mb-6 mt-16 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border px-7 py-2 shadow-md backdrop-blur transition-all">
               <p className="text-sm font-semibold text-white">
                 MaterialMate: Your Placement Companion!
               </p>
             </div>
-            <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mt-4 leading-[3rem]">
+            <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mt-4 leading-[3.5rem] sm:leading-[3rem]">
               Padhlo चाहे Kahi se{" "}
               <Highlight className="">
           Placement
@@ -80,7 +80,7 @@ export default function Home() {
               Hoga Yhi Se.
             </h1>
 
-            <p className="mt-5 max-w-prose text-slate-00 sm:text-lg">
+            <p className="mt-2 sm:mt-5 max-w-prose text-black xs:text-slate-500 text-[18px] px-4 sm:text-lg">
               Access notes, papers, and resources tailored for your university.
               Build your skills in development, DSA, aptitude, and core CS
               fundamentals to stand out!
@@ -107,7 +107,7 @@ export default function Home() {
       </BackgroundLines>
 
       {/* body */}
-      <div className="px-28 py-20">
+      {/* <div className="px-28 py-20">
       <ThreeDCardDemo isSecondCard={false} title="Your Ultimate Learning Companion!" discription="Whether you're a beginner or an expert, MaterialMate provides the best resources to help you:"/>
       <ThreeDCardDemo isSecondCard={true} title="Your Ultimate Learning Companion!" discription="Whether you're a beginner or an expert, MaterialMate provides the best resources to help you:"/>
       </div>
@@ -131,7 +131,7 @@ export default function Home() {
             }
           </div>
         </WavyBackground>
-      </div>
+      </div> */}
     </>
   );
 }
