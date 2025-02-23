@@ -56,11 +56,11 @@ export function CarouselOrientation({isSecondCard}:{
         align: "start",
       }}
       orientation="vertical"
-      className="w-full px-10 h-full"
+      className="w-full px-0 sm:px-10 h-full"
     >
-      <CarouselContent className="-mt-1 h-[25rem]">
+      <CarouselContent className="-mt-1 h-[33rem] lg:h-[25rem] sm:h-[25rem] xs:h-[30rem] md:h-[30rem]">
         {data.map((obj, index) => (
-          <CarouselItem key={index} className="pt-1 md:basis-1/2">
+          <CarouselItem key={index} className="pt-1 basis-1 md:basis-1/2">
             <div className="p-1">
                <div className={clsx("h-16 w-16  border-zinc-500 rounded-full border-2 flex justify-center items-center",{
                 "text-red-500":isSecondCard,
@@ -69,7 +69,7 @@ export function CarouselOrientation({isSecondCard}:{
                   {obj.icon}
                </div>
                <div className="text-xl font-semibold my-2">{obj.title}</div>
-                <p className="text-slate-400 my-1 border-b pb-6 border-zinc-500/25">{obj.discription}</p>
+                <p className="text-slate-400 xs:my-5 sm:my-1 my-8 border-b pb-6 border-zinc-500/25 text-md">{obj.discription}</p>
             </div>
           </CarouselItem>
         ))}

@@ -50,7 +50,7 @@ export default function Home() {
 
   return (
     <>
-      <BackgroundLines className="bg-zinc-950 h-screen">
+      <BackgroundLines className="bg-zinc-950 h-auto">
         <motion.h1
           initial={{
             opacity: 0,
@@ -67,20 +67,22 @@ export default function Home() {
           className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-200 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
         >
           <div className="flex flex-col items-center justify-center text-center">
-            <div className="mx-auto mb-2 sm:mb-6 mt-16 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border px-7 py-2 shadow-md backdrop-blur transition-all">
-              <p className="text-sm font-semibold text-white">
+            <div className="mx-auto mb-1 xs:mb-2 sm:mb-6 mt-16 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border px-4 py-2 xs:px-7 xs:py-2 shadow-md backdrop-blur transition-all">
+              <p className="text-xs xs:text-sm font-semibold text-white">
                 MaterialMate: Your Placement Companion!
               </p>
             </div>
-            <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl mt-4 leading-[3.5rem] sm:leading-[3rem]">
+            <h1 className="text-4xl xs:text-5xl sm:text-6xl md:text-6xl lg:text-7xl max-w-4xl font-bold mt-4 leading-[3rem] xs:leading-[3.5rem] sm:leading-[3.8rem]">
+              <span>
               Padhlo चाहे Kahi se{" "}
+              </span>
               <Highlight className="">
           Placement
           </Highlight>
-              Hoga Yhi Se.
+             <span> Hoga Yhi Se.</span>
             </h1>
 
-            <p className="mt-2 sm:mt-5 max-w-prose text-black xs:text-slate-500 text-[18px] px-4 sm:text-lg">
+            <p className="xs:mt-5 max-w-prose text-zinc-400 text-[18px] px-3 sm:text-lg leading-[21px]">
               Access notes, papers, and resources tailored for your university.
               Build your skills in development, DSA, aptitude, and core CS
               fundamentals to stand out!
@@ -88,15 +90,15 @@ export default function Home() {
           </div>
          
         </motion.h1>
-        <div className="mt-16">
+        <div className="px-5 xs:px-10 sm:px-20 md:px-40 py-16">
           <div className="flex items-center justify-center text-3xl font-bold mb-8">
             What do you want to learn today?
           </div>
-          <div className="items-center justify-center mx-40 grid grid-cols-4">
+          <div className="items-center justify-center gap-5 flex flex-wrap">
             {resources.map((resource, index) => {
               return (
              
-                  <AnimatedBtn className="mx-4 my-2 h-auto w-48" key={index}>
+                  <AnimatedBtn className="w-full sm:w-48" key={index}>
                   {resource}
                 </AnimatedBtn>
   
@@ -107,31 +109,31 @@ export default function Home() {
       </BackgroundLines>
 
       {/* body */}
-      {/* <div className="px-28 py-20">
+      <div className="px-0 xs:px-5 sm:px-10 md:px-16 lg:px-28 py-10 sm:py-20">
       <ThreeDCardDemo isSecondCard={false} title="Your Ultimate Learning Companion!" discription="Whether you're a beginner or an expert, MaterialMate provides the best resources to help you:"/>
       <ThreeDCardDemo isSecondCard={true} title="Your Ultimate Learning Companion!" discription="Whether you're a beginner or an expert, MaterialMate provides the best resources to help you:"/>
       </div>
       <HappyStudent/>
-      <div className="px-20 relative overflow-hidden">
-        <WavyBackground className="max-w-5xl mx-auto">
-          <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center">
+      <div className="px-5 md:px-10 lg:px-20 relative overflow-hidden">
+        <WavyBackground className="mx-auto">
+          <p className="text-[2rem] leading-[2.2rem] xs:text-[2.3rem] xs:leading-[2.5rem] md:text-5xl lg:text-7xl text-white font-bold inter-var text-center">
           Welcome to the Community!
           </p>
-          <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
+          <p className="text-base leading-[1.2rem] md:text-lg md:leading-normal mt-4 text-white font-normal inter-var text-center">
           Join a supportive community of passionate coders, where learning, collaboration, and innovation come together. Embark on your coding journey with us.
           </p>
-          <div className="flex items-center justify-center gap-24 mt-8">
+          <div className="flex items-center justify-center gap-5 xs:gap-10  md:gap-16 lg:gap-24 flex-wrap mt-8">
             {
               profiles.map((profile, index)=>{
                 return <div key={index} className="flex flex-col items-center justify-center">
-                  <img src={profile.img} alt="img" className="w-20" ></img>
+                  <img src={profile.img} alt="img" className="w-14 sm:w-20" ></img>
                   <p>{profile.name}</p>
                 </div>
               })
             }
           </div>
         </WavyBackground>
-      </div> */}
+      </div>
     </>
   );
 }

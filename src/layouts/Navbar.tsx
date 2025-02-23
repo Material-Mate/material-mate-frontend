@@ -54,7 +54,7 @@ const Navbar = () => {
     },
   };
   return (
-    <div className=" h-24 z-10 bg-zinc-950 relative flex py-1 px-5 sm:px-20 items-center justify-between">
+    <div className=" h-24 z-10 bg-zinc-950 relative flex py-1 px-5 sm:px-10 md:px-20 items-center justify-between">
       <Link href={"/"}>
         {" "}
         <Image src="/logo.gif" alt="logo" width={200} height={50} />

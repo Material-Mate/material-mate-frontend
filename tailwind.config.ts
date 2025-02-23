@@ -13,23 +13,14 @@ export default {
   ],
   theme: {
     screens: {
-      '2xl': {'min': '1535px'},
-      // => @media (min-width: 1535px) { ... }
-
-      'xl': {'min': '1279px'},
-      // => @media (min-width: 1279px) { ... }
-
-      'lg': {'min': '1023px'},
-      // => @media (min-width: 1023px) { ... }
-
-      'md': {'min': '767px'},
-      // => @media (min-width: 767px) { ... }
-
-      'sm': {'min': '639px'},
-      // => @media (min-width: 639px) { ... }
-      'xs': {'min': '200px'},
-      // => @media (min-width: 639px) { ... }
+      'xs': {'min': '400px'},
+      'sm': {'min': '640px'}, // Fix typo from 639px to 640px (default)
+      'md': {'min': '768px'}, // Fix typo from 767px to 768px (default)
+      'lg': {'min': '1024px'}, // Fix typo from 1023px to 1024px (default)
+      'xl': {'min': '1280px'}, // Fix typo from 1279px to 1280px (default)
+      '2xl': {'min': '1536px'}, // Fix typo from 1535px to 1536px (default)
     },
+    
     extend: {
       animation: {
         border: 'border 4s ease infinite',
