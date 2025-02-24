@@ -11,7 +11,7 @@ const SubjectCard = ({subject,course,onclick,animation,index}:{
   return (
     <motion.div 
     id='shadow_for_card' 
-    className='bg-zinc-900 hover:bg-zinc-800 rounded-lg py-5 px-8 border border-slate-800 text-lg cursor-pointer relative'
+    className='bg-zinc-900 w-full sm:w-auto hover:bg-zinc-800 rounded-lg py-5 px-8 border border-slate-800 text-lg cursor-pointer relative'
     onClick={()=>onclick(true)}
     variants={animation}
     initial="initial"

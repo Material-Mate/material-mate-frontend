@@ -13,7 +13,7 @@ const Tab = ({
     <div className="flex mb-4 p-2 border-2 w-fit rounded-xl ">
       <button
         onClick={() => handleTabClick(tab1)}
-        className={`py-2 rounded-l-lg  px-6 text-lg font-semibold  ${
+        className={`py-2 rounded-l-lg  px-6 text-[1rem] leading-[1.1rem]  sm:text-lg font-semibold  ${
           selectedTab === tab1
             ? "bg-gradient-to-r from-indigo-400 to-purple-500  text-white"
             : "bg-zinc-800 text-gray-400"
@@ -23,7 +23,7 @@ const Tab = ({
       </button>
       <button
         onClick={() => handleTabClick(tab2)}
-        className={`py-2 rounded-r-lg px-6 text-lg font-semibold d ${
+        className={`py-2 rounded-r-lg px-6 text-[1rem] leading-[1.1rem]  sm:text-lg font-semibold d ${
           selectedTab === tab2
             ? "bg-gradient-to-r from-indigo-400 to-purple-500  text-white"
             : "bg-zinc-800 text-gray-400"

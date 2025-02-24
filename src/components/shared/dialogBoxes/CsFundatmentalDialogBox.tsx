@@ -20,7 +20,7 @@ const CsFundatmentalDialogBox = ({
 }) => {
   return (
     <Dialog open={isOpen} onOpenChange={onChange}>
-      <DialogContent className="max-w-[90%] sm:max-w-[60%] md:max-w-[50%] lg:max-w-[30%] h-auto  bg-zinc-950 flex flex-col">
+      <DialogContent className="max-w-[90%] sm:max-w-[60%] md:max-w-[50%] lg:max-w-[30%] h-auto  bg-zinc-950 flex flex-col rounded-lg">
         <Image
           src={
             activeSubject.thumbnail
@@ -28,17 +28,17 @@ const CsFundatmentalDialogBox = ({
           height={400}
           width={400}
           alt=""
-          className="rounded-xl"
+          className="rounded-xl w-full"
         />
       <div className="w-full h-full">
       <DialogHeader className="h-[10%]">
           <DialogTitle className="text-2xl">
-            <span className="bg-gradient-to-r from-purple-300 to-purple-400 bg-clip-text text-transparent">
+            <h1 className="bg-gradient-to-r text-start from-purple-300 to-purple-400 bg-clip-text text-transparent sm:mb-1 mb-3">
              {activeSubject.name}
-            </span>
+            </h1>
           </DialogTitle>
         </DialogHeader>
-        <div className="flex flex-col gap-4 w-full max-h-[15rem]  min-h-[10rem] overflow-y-auto px-2 py-2">
+        <div className="flex flex-col gap-4 w-full max-h-[15rem]  min-h-[10rem] overflow-y-auto px-1 py-2">
           {activeSubject.videos_links.map((lecture, index) => (
             <div
               key={index}
@@ -53,15 +53,15 @@ const CsFundatmentalDialogBox = ({
             </div>
           ))}
         </div>
-        <DialogFooter className="w-full flex">
+        <DialogFooter className="w-full flex ">
           <Button
             onClick={() => onChange(false)}
-            className="bg-gradient-to-r mt-2 w-1/2"
+            className="bg-gradient-to-r mt-2 w-full sm:w-1/2"
           >
             Close
           </Button>
           <Button
-            className="flex gap-1 items-center bg-gradient-to-r mt-2 w-1/2 from-purple-400 to-purple-600"
+            className="flex gap-1 items-center bg-gradient-to-r mt-2 w-full sm:w-1/2 from-purple-400 to-purple-600"
           >
             <Link href={activeSubject.notes_link} className="flex gap-1 items-center">
             <Download/>

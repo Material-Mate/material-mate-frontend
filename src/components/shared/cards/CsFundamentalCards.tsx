@@ -11,7 +11,7 @@ const CsFundamentalCards = ({onClick,animation,index,subject}: {
   return (
     <motion.div 
     id='shadow_for_card_2' 
-    className="shadow-xl bg-zinc-900 rounded-xl p-5 w-[310px] overflow-hidden"
+    className="shadow-xl h-auto bg-zinc-900 rounded-xl p-5 sm:w-[260px]  md:w-[310px] overflow-hidden"
     variants={animation}
     initial="initial"
     whileInView="animate"
@@ -25,9 +25,9 @@ const CsFundamentalCards = ({onClick,animation,index,subject}: {
         height={500}
         width={350}
         alt=""
-        className="rounded-xl"
+        className="rounded-xl w-full"
       />
-      <div className="py-2 px-1">
+      <div className="py-4 md:py-2 px-1">
         <h3 className="text-xl font-semibold">{subject.name}</h3>
         <p className="text-sm text-zinc-400 py-2">
          {subject.discription}

@@ -56,7 +56,7 @@ const csSubject:CSSubject = {
 const Development = () => {
   const [selectedTab,setSelectedTab] = useState("Web Development")
   return (
-    <div className='px-28 py-10'>
+    <div className='px-5 sm:px-10 md:px-16 lg:px-28 py-10'>
       <Tab tab1={'Web Development'} tab2={'Android Development'} selectedTab={selectedTab} handleTabClick={setSelectedTab} />
        {
         selectedTab==="Web Development"?<div className='mt-10'>

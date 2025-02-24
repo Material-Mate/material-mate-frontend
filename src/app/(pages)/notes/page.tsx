@@ -35,7 +35,7 @@ const Notes: React.FC<NotesProps> = () => {
   };
 
   return (
-    <div className="py-5 px-28">
+    <div className="py-5 px-5 sm:px-10 md:px-28">
       {/* Tabs */}
       <div className="flex justify-between items-center">
         <Tab
@@ -45,33 +45,14 @@ const Notes: React.FC<NotesProps> = () => {
           tab2="MBA"
         />
         <SubjectDrawer open={isDrawerOpen} onChange={setIsDrawerOpen}/>
-        <Select>
-          <SelectTrigger className="w-[180px]">
-            <SelectValue placeholder="Select Semester" className="text-xl" />
-          </SelectTrigger>
-          <SelectContent className="bg-black text-white">
-            <SelectGroup>
-              <SelectLabel>Semesters</SelectLabel>
-              {semesters.map((semester) => (
-                <SelectItem
-                  key={semester.value}
-                  value={semester.value.toString()}
-                  className="hover:bg-gradient-to-r from-indigo-400 to-purple-500 cursor-pointer data-[state=checked]:bg-gradient-to-r data-[state=checked]:from-indigo-400 data-[state=checked]:to-purple-500"
-                >
-                  {semester.label}
-                </SelectItem>
-              ))}
-            </SelectGroup>
-          </SelectContent>
-        </Select>
       </div>
 
       {/* Notes */}
       <div className="py-6 rounded-lg shadow-md">
-        <h2 className="text-2xl font-semibold mb-4">
+        <h2 className="text-3xl md:text-2xl font-semibold mb-4">
           {selectedTab} Notes - All Semesters
         </h2>
-        <div className=" flex justify-start items-center gap-5 flex-wrap">
+        <div className=" flex justify-center md:py-0 py-10 md:justify-start items-center gap-5 flex-wrap">
           {getNotesForTab(selectedTab).map((note, index) => (
              <SubjectCard animation={fadeInCardAnimation} index={index} key={index} course={`${selectedTab=="MCA"?"MCA":"MBA"}`} subject="Testing Subject Notes" onclick={setIsDrawerOpen} />
           ))}

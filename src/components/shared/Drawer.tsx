@@ -29,13 +29,13 @@ export function SubjectDrawer({open,onChange}:{
 
   return (
     <Drawer open={open} onOpenChange={onChange}>
-      <DrawerContent className="bg-zinc-950 border-none">
+      <DrawerContent className="bg-zinc-950 border-none p-2">
         <div className="mx-auto w-full max-w-sm">
           <DrawerHeader className="px-1">
             <DrawerTitle>All Subjects</DrawerTitle>
             <DrawerDescription>Click on any subject to get the notes.</DrawerDescription>
           </DrawerHeader>
-         <div >
+         <div  >
             {
                 [1,2,3,4,5].map((n)=>{
                     return <AnimatedBtn key={n} className="mb-2">Subject {n}</AnimatedBtn>
