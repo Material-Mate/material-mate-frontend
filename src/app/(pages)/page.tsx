@@ -106,14 +106,14 @@ export default function Home() {
         </div>
       </BackgroundLines>
 
-      {/* body */}
-      {/* <div className="px-28 py-20">
+      {/* body */} 
+     {/* <div className="px-28 py-20">
       <ThreeDCardDemo isSecondCard={false} title="Your Ultimate Learning Companion!" discription="Whether you're a beginner or an expert, MaterialMate provides the best resources to help you:"/>
       <ThreeDCardDemo isSecondCard={true} title="Your Ultimate Learning Companion!" discription="Whether you're a beginner or an expert, MaterialMate provides the best resources to help you:"/>
-      </div>
+      </div> */}
       <HappyStudent/>
       <div className="px-20 relative overflow-hidden">
-        <WavyBackground className="max-w-5xl mx-auto">
+        {/* <WavyBackground className="max-w-5xl mx-auto">
           <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center">
           Welcome to the Community!
           </p>
@@ -130,8 +130,8 @@ export default function Home() {
               })
             }
           </div>
-        </WavyBackground>
-      </div> */}
+        </WavyBackground> */}
+      </div>
     </>
   );
 }
